@@ -1,8 +1,8 @@
 #include <Arduino.h>
 
-const long DEFAULT_TIMEOUT      = 500;
-const long PULSE_MICROSECONDS   = 10;
-const int  TIME_DISTANCE_RATE   = 58;
+const long  DEFAULT_TIMEOUT      = 5000;
+const long  PULSE_MICROSECONDS   = 1000;
+const float TIME_DISTANCE_RATE  = 58.2;
 
 class hcsr04{
     public:
@@ -13,7 +13,7 @@ class hcsr04{
         bool    readDistance();
         
         //Setters
-        void    setTimeout(const log timeout);
+        void    setTimeout(long timeout);
 
         //Getters
         float   getDistance();
@@ -23,7 +23,7 @@ class hcsr04{
         int     _trigPin;
         int     _echoPin;
         long    _timeout;
-        long    _duration;
+        float    _duration;
         float   _distance;
     
     protected:

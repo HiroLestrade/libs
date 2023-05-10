@@ -20,9 +20,9 @@ bool hcsr04::readDistance(){
 
     _duration = pulseIn(_echoPin, HIGH, _timeout);
 
-    if(_duration >= _timeout) return false;
+    if(_duration > _timeout) return false;
 
-    _distance = duration / TIME_DISTANCE_RATE;
+    _distance = _duration / TIME_DISTANCE_RATE;
     return true;
 }
 
