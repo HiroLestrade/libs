@@ -1,0 +1,10 @@
+name          = HC-SR04 sensor library
+version       = 0.1
+author        = Hiro Lestrade
+maintainer    = Lestrade Futuristics
+sentence      = Arduino library for HC-SR04 ultrasonic sensor
+paragraph     = Arduino library for HC-SR04 ultrasonic sensor
+category      = Sensors
+url           = https://github.com/HiroLestrade/
+architectures = *
+depends       = Ultrasonic Ranging Module HC-SR04 https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
